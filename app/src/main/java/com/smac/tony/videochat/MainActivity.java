@@ -1,9 +1,9 @@
 package com.smac.tony.videochat;
 
 import android.Manifest;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.widget.FrameLayout;
 
@@ -17,12 +17,10 @@ import com.opentok.android.Subscriber;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
-import static android.Manifest.permission.INTERNET;
-
 public class MainActivity extends AppCompatActivity implements Session.SessionListener,PublisherKit.PublisherListener {
     private  static  String API_KEY="46125722";
-    private static String SESSION_ID="2_MX40NjEyNTcyMn5-MTUyNzI3Mjk4MDY5OX5BK3U2NjlPODgvVk5qTlNVcVZ2SmFtNmJ-fg";
-    private static String TOKEN="T1==cGFydG5lcl9pZD00NjEyNTcyMiZzZGtfdmVyc2lvbj1kZWJ1Z2dlciZzaWc9YzJkMjE0NWNjZDNmNjZhYzBhOWRlNjY0NGJhODBlOWYzNDRiNjc0ZjpzZXNzaW9uX2lkPTJfTVg0ME5qRXlOVGN5TW41LU1UVXlOekkzTWprNE1EWTVPWDVCSzNVMk5qbFBPRGd2Vms1cVRsTlZjVloyU21GdE5tSi1mZyZjcmVhdGVfdGltZT0xNTI3MzE0MDU1JnJvbGU9bW9kZXJhdG9yJm5vbmNlPTE1MjczMTQwNTUuNzQ5ODE5MDI2NjY3MTAmZXhwaXJlX3RpbWU9MTUyOTkwNjA1NQ==" ;
+    private static String SESSION_ID="1_MX40NjEyNTcyMn5-MTUyNzMyNzcyNjk5OX5PNjdCUXhVVEw1MTZINmN0eWNzbWQxbW5-fg";
+    private static String TOKEN="T1==cGFydG5lcl9pZD00NjEyNTcyMiZzaWc9MGUzN2Q1OWE2MTU0ZDE3YjJlMmIwYzE4OGJjYWFiZGJhMGVkYTRlODpzZXNzaW9uX2lkPTFfTVg0ME5qRXlOVGN5TW41LU1UVXlOek15TnpjeU5qazVPWDVQTmpkQ1VYaFZWRXcxTVRaSU5tTjBlV056YldReGJXNS1mZyZjcmVhdGVfdGltZT0xNTI3NDkwNzc5Jm5vbmNlPTAuODc4ODI1Mjk4MjY3MDMwNCZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTI4MDk1NTc5JmNvbm5lY3Rpb25fZGF0YT1QdWJsaXNoZXImaW5pdGlhbF9sYXlvdXRfY2xhc3NfbGlzdD0=" ;
     private static String LOG_TAG=MainActivity.class.getSimpleName();
     private static final int PC_SETTINGS=123;
     private static final int RC_SETTINGS_SCREEN_PERM = 123;

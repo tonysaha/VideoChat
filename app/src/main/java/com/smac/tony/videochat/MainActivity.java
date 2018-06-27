@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import com.opentok.android.OpentokError;
@@ -20,7 +21,7 @@ import pub.devrel.easypermissions.EasyPermissions;
 public class MainActivity extends AppCompatActivity implements Session.SessionListener,PublisherKit.PublisherListener {
     private  static  String API_KEY="46125722";
     private static String SESSION_ID="1_MX40NjEyNTcyMn5-MTUyNzMyNzcyNjk5OX5PNjdCUXhVVEw1MTZINmN0eWNzbWQxbW5-fg";
-    private static String TOKEN="T1==cGFydG5lcl9pZD00NjEyNTcyMiZzaWc9MGUzN2Q1OWE2MTU0ZDE3YjJlMmIwYzE4OGJjYWFiZGJhMGVkYTRlODpzZXNzaW9uX2lkPTFfTVg0ME5qRXlOVGN5TW41LU1UVXlOek15TnpjeU5qazVPWDVQTmpkQ1VYaFZWRXcxTVRaSU5tTjBlV056YldReGJXNS1mZyZjcmVhdGVfdGltZT0xNTI3NDkwNzc5Jm5vbmNlPTAuODc4ODI1Mjk4MjY3MDMwNCZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTI4MDk1NTc5JmNvbm5lY3Rpb25fZGF0YT1QdWJsaXNoZXImaW5pdGlhbF9sYXlvdXRfY2xhc3NfbGlzdD0=" ;
+    private static String TOKEN="T1==cGFydG5lcl9pZD00NjEyNTcyMiZzaWc9ZmI0YmM0OTMyYTc5MmM3NWRlZWY3MDE4ODRmYWQ1YjNjMjkxYWE1MjpzZXNzaW9uX2lkPTFfTVg0ME5qRXlOVGN5TW41LU1UVXlOek15TnpjeU5qazVPWDVQTmpkQ1VYaFZWRXcxTVRaSU5tTjBlV056YldReGJXNS1mZyZjcmVhdGVfdGltZT0xNTMwMDEwMDEzJm5vbmNlPTAuNTc1MDI0NTk0OTQxMjAyMyZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTMwNjE0ODEzJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9" ;
     private static String LOG_TAG=MainActivity.class.getSimpleName();
     private static final int PC_SETTINGS=123;
     private static final int RC_SETTINGS_SCREEN_PERM = 123;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements Session.SessionLi
 
         mPublisherViewContainer = (FrameLayout)findViewById(R.id.publisher_container);
         mSubscriberViewContainer = (FrameLayout)findViewById(R.id.subscriber_container);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
     }
 

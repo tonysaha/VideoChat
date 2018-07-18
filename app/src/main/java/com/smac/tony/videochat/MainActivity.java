@@ -19,9 +19,14 @@ import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
 public class MainActivity extends AppCompatActivity implements Session.SessionListener,PublisherKit.PublisherListener {
-    private  static  String API_KEY="46125722";
-    private static String SESSION_ID="1_MX40NjEyNTcyMn5-MTUyNzMyNzcyNjk5OX5PNjdCUXhVVEw1MTZINmN0eWNzbWQxbW5-fg";
-    private static String TOKEN="T1==cGFydG5lcl9pZD00NjEyNTcyMiZzaWc9ZmI0YmM0OTMyYTc5MmM3NWRlZWY3MDE4ODRmYWQ1YjNjMjkxYWE1MjpzZXNzaW9uX2lkPTFfTVg0ME5qRXlOVGN5TW41LU1UVXlOek15TnpjeU5qazVPWDVQTmpkQ1VYaFZWRXcxTVRaSU5tTjBlV056YldReGJXNS1mZyZjcmVhdGVfdGltZT0xNTMwMDEwMDEzJm5vbmNlPTAuNTc1MDI0NTk0OTQxMjAyMyZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTMwNjE0ODEzJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9" ;
+    private  static  String API_KEY="46149682";
+    private static String SESSION_ID="1_MX40NjE0OTY4Mn5-MTUzMDk2NjcwNzY5OH5hVWZLY29NbEFrNWprSEh0dTQwcXMycWt-fg";
+    private static String TOKEN="T1==cGFydG5lcl9pZD00NjE0OTY4MiZzZGtfdmVyc2lvbj1kZWJ1Z2dlciZzaWc9ZDE3ZDI2M2UxNTdjYjdlNmE1YWZjMDUyZWJmYjZjMzMzMGE0MTM3NjpzZXNzaW9uX2lkPTFfTVg0ME5qRTBPVFk0TW41LU1UVXpNRGsyTmpjd056WTVPSDVoVldaTFkyOU5iRUZyTldwclNFaDBkVFF3Y1hNeWNXdC1mZyZjcmVhdGVfdGltZT0xNTMwOTY2OTI5JnJvbGU9cHVibGlzaGVyJm5vbmNlPTE1MzA5NjY5MjkuMTA5ODI4MjMyNDcyMCZleHBpcmVfdGltZT0xNTMzNTU4OTI5" ;
+
+//    private  static  String API_KEY="46125722";
+//    private static String SESSION_ID="1_MX40NjEyNTcyMn5-MTUyNzMyNzcyNjk5OX5PNjdCUXhVVEw1MTZINmN0eWNzbWQxbW5-fg";
+//    private static String TOKEN="T1==cGFydG5lcl9pZD00NjEyNTcyMiZzaWc9ZmI0YmM0OTMyYTc5MmM3NWRlZWY3MDE4ODRmYWQ1YjNjMjkxYWE1MjpzZXNzaW9uX2lkPTFfTVg0ME5qRXlOVGN5TW41LU1UVXlOek15TnpjeU5qazVPWDVQTmpkQ1VYaFZWRXcxTVRaSU5tTjBlV056YldReGJXNS1mZyZjcmVhdGVfdGltZT0xNTMwMDEwMDEzJm5vbmNlPTAuNTc1MDI0NTk0OTQxMjAyMyZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTMwNjE0ODEzJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9" ;
+
     private static String LOG_TAG=MainActivity.class.getSimpleName();
     private static final int PC_SETTINGS=123;
     private static final int RC_SETTINGS_SCREEN_PERM = 123;
